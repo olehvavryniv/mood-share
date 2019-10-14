@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: mood_share_development
+
+test:
+  <<: *default
+  database: mood_share_test
+
+
+production:
+  <<: *default
+  database: mood_share_production
