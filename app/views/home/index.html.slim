@@ -1,4 +1,8 @@
 h1
   | Home#index
-p
-  Find me in app/views/home/index.html.erb
+div
+  img src = current_user.image_url_32
+  h4
+    = "Hello #{current_user.name}"
+  p
+    = link_to "Sign out", auth_slack_sign_out_path
