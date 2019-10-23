@@ -12,11 +12,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem "slim-rails"
 gem 'react-rails'
+gem 'omniauth-slack', '~> 2.3'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug'
 end
 
 group :development do
